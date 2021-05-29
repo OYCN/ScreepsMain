@@ -1,16 +1,4 @@
-/*
-*   结构与花费的资源对应表
-*/
-const structure = {
-    'MOVE': 50,
-    'WORK': 100,
-    'CARRY': 50,
-    'ATTACK': 80,
-    'RANGED_ATTACK': 150,
-    'HEAL': 250,
-    'CLAIM': 600,
-    'TOUGH': 10
-}
+import { structure } from "./bodys"
 
 /*
 *   根据给定的配置返回特定的结构列表
@@ -51,10 +39,15 @@ const spawn = function(cfg: harvester_cfg)
     return body
 }
 
+const run = function(creeper: Creep)
+{
+
+}
+
 /*
 *   用于定义收获者(harvester)的生成、运行
 */
 export const role_harvester = {
     'spawn': spawn,
-    'run': NaN
+    'run': run
 }

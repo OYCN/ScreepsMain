@@ -12,3 +12,8 @@ interface harvester_cfg
     pure: boolean
     energy: number
 }
+
+interface builder_cfg
+{
+    energy: number
+}
